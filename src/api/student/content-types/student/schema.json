@@ -34,14 +34,6 @@
       "required": true,
       "unique": true
     },
-    "avatar": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "phone": {
       "type": "string",
       "required": true,

@@ -929,7 +929,6 @@ export interface ApiStudentStudent extends Schema.CollectionType {
     IdentityCode: Attribute.String & Attribute.Required & Attribute.Unique;
     MSV: Attribute.String & Attribute.Unique;
     email: Attribute.Email & Attribute.Required & Attribute.Unique;
-    avatar: Attribute.Media;
     phone: Attribute.String & Attribute.Required & Attribute.Unique;
     gender: Attribute.Enumeration<['male', 'female']> & Attribute.Required;
     Address: Attribute.String & Attribute.Required;
