@@ -41,11 +41,6 @@
       "required": true,
       "default": "0"
     },
-    "CurrentSize": {
-      "type": "biginteger",
-      "required": true,
-      "default": "0"
-    },
     "Start": {
       "type": "date"
     },
@@ -63,6 +58,11 @@
       "relation": "manyToMany",
       "target": "api::student.student",
       "inversedBy": "courses"
+    },
+    "available": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

@@ -806,9 +806,6 @@ export interface ApiCourseCourse extends Schema.CollectionType {
     CourseID: Attribute.String & Attribute.Required & Attribute.Unique;
     TuitionFee: Attribute.Float & Attribute.Required;
     Size: Attribute.BigInteger & Attribute.Required & Attribute.DefaultTo<'0'>;
-    CurrentSize: Attribute.BigInteger &
-      Attribute.Required &
-      Attribute.DefaultTo<'0'>;
     Start: Attribute.Date;
     end: Attribute.Date;
     lecturer: Attribute.Relation<
@@ -821,6 +818,9 @@ export interface ApiCourseCourse extends Schema.CollectionType {
       'manyToMany',
       'api::student.student'
     >;
+    available: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -927,7 +927,7 @@ export interface ApiStudentStudent extends Schema.CollectionType {
     name: Attribute.String & Attribute.Required;
     Birthday: Attribute.Date & Attribute.Required;
     IdentityCode: Attribute.String & Attribute.Required & Attribute.Unique;
-    MSV: Attribute.String & Attribute.Unique;
+    MSV: Attribute.String;
     email: Attribute.Email & Attribute.Required & Attribute.Unique;
     phone: Attribute.String & Attribute.Required & Attribute.Unique;
     gender: Attribute.Enumeration<['male', 'female']> & Attribute.Required;

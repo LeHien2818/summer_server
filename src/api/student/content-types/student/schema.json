@@ -27,7 +27,7 @@
     },
     "MSV": {
       "type": "string",
-      "unique": true
+      "unique": false
     },
     "email": {
       "type": "email",
