@@ -69,6 +69,16 @@
         "Khác"
       ],
       "required": true
+    },
+    "expertise": {
+      "type": "enumeration",
+      "enum": [
+        "Novice",
+        "Intermediate",
+        "Advance"
+      ],
+      "required": true,
+      "default": "Novice"
     }
   }
 }

@@ -1,3 +1,19 @@
+# Noting before Getting started with Strapi
+### Run following command before use this server
+```
+npm install
+```
+### at root level
+
+### after that, navigate to dashboard folder using this command:
+```
+cd src/plugins/dashboard
+```
+### and run this command again:
+
+```
+npm install
+```
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.

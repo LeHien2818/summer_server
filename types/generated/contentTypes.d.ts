@@ -942,6 +942,9 @@ export interface ApiStudentStudent extends Schema.CollectionType {
       ['Sinh vi\u00EAn', 'Ng\u01B0\u1EDDi \u0111i l\u00E0m', 'Kh\u00E1c']
     > &
       Attribute.Required;
+    expertise: Attribute.Enumeration<['Novice', 'Intermediate', 'Advance']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'Novice'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
