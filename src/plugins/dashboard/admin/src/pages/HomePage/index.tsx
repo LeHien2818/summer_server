@@ -251,7 +251,7 @@ const drawBarChartOfExpertiseLevel = (data:any)=>{
         title: {
             display: true,
             text: 'Number of people of each expertise level',
-            color: 'white'
+            color: 'gray'
         }
     }
   };
@@ -290,7 +290,7 @@ const drawPieChartOfExpertiseLevel = (data:any)=>{
         title: {
           display: true,
           text: 'Percentage of each expertise level',
-          color: 'white'
+          color: 'gray'
         }
       }
   }
@@ -331,7 +331,7 @@ const drawBarChartOfAge = (age:any)=>{
           title: {
               display: true,
               text: 'Number of people of each age',
-              color: 'white'
+              color: 'gray'
           }
       }
     };
@@ -371,7 +371,7 @@ const drawPieChartOfAge = (age:any)=>{
         title: {
           display: true,
           text: 'Percentage of each age',
-          color: 'white'
+          color: 'gray'
         }
       }
   }
