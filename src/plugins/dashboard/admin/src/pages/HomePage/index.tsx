@@ -65,19 +65,19 @@ const HomePage = () => {
         <SubNav ariaLabel="Builder sub nav">
         <SubNavSections>
                 <SubNavSection label="Diagram type" collapsable badgeLabel={'4'} gap={3}>
-                    <Button variant="default" width="186" height="151" size="L" onClick={() => {setCharts([...charts, drawBarChartOfExpertiseLevel(data)])}}>
+                    <Button variant="default" width="186" height="151" size="L" onClick={() => {setCharts([drawBarChartOfExpertiseLevel(data)])}}>
                       Number of people according to expertise level
                     </Button>
                   <br />
-                  <Button variant="default" width="186" height="151" size="L" onClick={() => {setCharts([...charts, drawPieChartOfExpertiseLevel(data)])}}>
+                  <Button variant="default" width="186" height="151" size="L" onClick={() => {setCharts([drawPieChartOfExpertiseLevel(data)])}}>
                      Percentage of people according to expertise level
                   </Button>
                   <br />
-                  <Button variant="default" width="186" height="151" size="L" onClick={() => {setCharts([...charts, drawBarChartOfAge(age)])}}>
+                  <Button variant="default" width="186" height="151" size="L" onClick={() => {setCharts([drawBarChartOfAge(age)])}}>
                      Number of people according to age
                   </Button>
                   <br />
-                  <Button variant="default" width="186" height="151" size="L" onClick={() => {setCharts([...charts, drawPieChartOfAge(age)])}}>
+                  <Button variant="default" width="186" height="151" size="L" onClick={() => {setCharts([drawPieChartOfAge(age)])}}>
                      Percentage of people according to expertise level
                   </Button>
                   <br />
