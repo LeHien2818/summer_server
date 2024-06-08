@@ -14,6 +14,11 @@ cd src/plugins/dashboard
 ```
 npm install
 ```
+### Do the same sequence for export-pdf folder
+```
+cd src/plugins/export-pdf
+npm install
+```
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
